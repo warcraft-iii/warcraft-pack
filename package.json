@@ -2,7 +2,7 @@
   "name": "warcraft-pack",
   "version": "0.0.4",
   "description": "A Wracraft III map pack tool",
-  "main": "dist/index.js",
+  "main": "dist/lib.js",
   "bin": "bin/cmd.js",
   "scripts": {
     "prepublishOnly": "yarn build",
