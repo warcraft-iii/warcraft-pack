@@ -27,7 +27,7 @@ async function getAllFiles(p: string, r: string[] = []) {
     return r;
 }
 
-export default async function run(input: string, output: string) {
+export async function run(input: string, output: string) {
     if (await fs.exists(output)) {
         await fs.unlink(output);
     }
