@@ -1,0 +1,41 @@
+{
+  "name": "warcraft-pack",
+  "version": "0.0.1",
+  "description": "A Wracraft III map pack tool",
+  "main": "dist/index.js",
+  "bin": "dist/index.js",
+  "scripts": {
+    "prepublishOnly": "yarn build",
+    "build": "tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/warcraft-iii/warcraft-pack.git"
+  },
+  "keywords": [
+    "WarcraftIII"
+  ],
+  "author": "Dencer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/warcraft-iii/warcraft-pack/issues"
+  },
+  "homepage": "https://github.com/warcraft-iii/warcraft-pack#readme",
+  "devDependencies": {
+    "@types/mz": "0.0.32",
+    "@types/node": "^11.13.4",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.3"
+  },
+  "dependencies": {
+    "commander": "^2.20.0",
+    "mz": "^2.7.0",
+    "stormlib": "git+https://github.com/DengSir/JStormLib.git"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "useTabs": false,
+    "trailingComma": "es5",
+    "singleQuote": true
+  }
+}
