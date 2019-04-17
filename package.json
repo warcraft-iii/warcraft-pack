@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "description": "A Wracraft III map pack tool",
   "main": "dist/index.js",
-  "bin": "dist/index.js",
+  "bin": "bin/cmd.js",
   "scripts": {
     "prepublishOnly": "yarn build",
     "build": "tsc -p ."
