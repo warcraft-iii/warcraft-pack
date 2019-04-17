@@ -57,7 +57,7 @@ async function main() {
         return;
     }
 
-    if (!(await fs.exists(program.output))) {
+    if (!(await fs.exists(program.args[0]))) {
         program.outputHelp();
         return;
     }
