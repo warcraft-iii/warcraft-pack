@@ -12,14 +12,15 @@ import path from 'path';
 
 async function getAllFiles(p: string, r: string[] = []) {
     for (let file of await fs.readdir(p)) {
-        if (file.startsWith('.') || file.startsWith('@')) {
+        const name = path.basename(file);
+        if (name.startsWith('.') || name.startsWith('@')) {
             continue;
         }
 
         file = path.join(p, file);
         const stats = await fs.stat(file);
         if (stats.isDirectory()) {
-            getAllFiles(file, r);
+            await getAllFiles(file, r);
         } else if (stats.isFile()) {
             r.push(file);
         }
